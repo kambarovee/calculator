@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDisplayPart"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/tvInput"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:gravity="right|bottom|center_vertical"
+            android:maxLength="12"
+            android:paddingTop="30sp"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/foroperationbuttons"
+                android:onClick="onClear"
+                android:text="C"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/foroperationbuttons"
+                android:onClick="onOperator"
+                android:text="/"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/foroperationbuttons"
+                android:onClick="onOperator"
+                android:text="*"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/foroperationbuttons"
+                android:onClick="onOperator"
+                android:text="+"
+                android:textSize="48sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="7"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="8"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="9"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/foroperationbuttons"
+                android:onClick="onOperator"
+                android:text="-"
+                android:textSize="48sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="4"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="5"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="6"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/foroperationbuttons"
+                android:text="%"
+                android:textSize="48sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="1"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="2"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="3"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/foroperationbuttons"
+                android:onClick="onDecimalPoint"
+                android:text="."
+                android:textSize="48sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:background="@drawable/forbuttons"
+                android:onClick="onDigit"
+                android:text="0"
+                android:textSize="48sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:background="@drawable/foroperationbuttons"
+                android:onClick="onEqual"
+                android:text="="
+                android:textSize="48sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
